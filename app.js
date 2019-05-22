@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 //setting up Mongoose
-mongoose.connect('mongodb://localhost:27017/journalDB', {
+mongoose.connect('mongodb+srv://admin-Alan:test123@cluster0-8xpvz.mongodb.net/todolistDB', {
   useNewUrlParser: true
 });
 
@@ -92,7 +92,11 @@ app.post('/compose', function(req, res) {
   res.redirect("/");
 });
 
-//currently listening on local port.
-app.listen(3000, function() {
+//configuring the listening port.
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port, function() {
   console.log("Server started on port 3000");
 });
