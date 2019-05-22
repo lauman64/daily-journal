@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 //setting up Mongoose
-mongoose.connect('mongodb+srv://admin-Alan:test123@cluster0-8xpvz.mongodb.net/todolistDB', {
+mongoose.connect('mongodb+srv://admin-Alan:test123@cluster0-8xpvz.mongodb.net/journalDB', {
   useNewUrlParser: true
 });
 
