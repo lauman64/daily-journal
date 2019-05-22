@@ -1,0 +1,116 @@
+body {
+  background-color: #fcfdff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-content {
+  min-height: 100%;
+  margin-bottom: -60px;
+}
+
+.page-content::after {
+  content: "";
+  display: block;
+}
+
+footer, .page-content::after {
+  height: 60px;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #fdfdf6;
+}
+
+.navbar-brand {
+  font-family: 'Stylish', sans-serif;
+  font-size: 30px;
+}
+
+.navbar {
+  font-family: 'Stylish', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  letter-spacing: 4px;
+  background-image: linear-gradient(to right, #f2eee0, #fff);
+}
+
+.navbar-nav li a:hover {
+  color: #5ca0d3 !important;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to left, #f2eee0, #fff);
+}
+
+footer p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 3px;
+  padding-top: 25px;
+  font-size: 12px;
+  color: #777;
+}
+
+.row {
+  background-color: #fcfdff;
+}
+
+.content {
+  background-color: #fcfdff;
+  padding-bottom: 60px;
+
+}
+.content h1 {
+  font-size: 5rem;
+  font-family: 'Just Me Again Down Here', cursive;
+}
+.content p {
+  font-size: 3rem;
+  font-family: 'Just Me Again Down Here', cursive;
+}
+
+.about {
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input, textarea{
+  font-family: 'Just Me Again Down Here', cursive;
+}
+
+input[type="text"]{
+  font-size: 35px;
+}
+.biggerText {
+  font-size: 30px;
+}
+
+.readMore{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+.noHover, .noHover:onhover{
+  color: #777;
+  pointer-events: none;
+
+}
